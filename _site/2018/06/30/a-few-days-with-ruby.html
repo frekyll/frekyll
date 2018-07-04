@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Few Days with Ruby</title>
+  <meta name="description" content="Last month I spent eight consecutive days learning the Ruby language. I wasn’t able to continue coding daily. I may write on that later. But, I’m inspired to...">
+
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/assets/style.css">
+  <style>code{padding:0}</style>
+
+  <link rel="canonical" href="http://localhost:4000/2018/06/30/a-few-days-with-ruby.html">
+  <link rel="alternate" type="application/rss+xml" title="Frekyll" href="http://localhost:4000/feed.xml">
+
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="border-bottom-thick px-2 clearfix">
+  <div class="left sm-width-full py-1 mt-1 mt-lg-0">
+    <a class="align-middle link-primary text-accent" href="/">
+      Frekyll
+    </a>
+  </div>
+  <div class="right sm-width-full">
+    <ul class="list-reset mt-lg-1 mb-2 mb-lg-1">
+      
+        
+      
+        
+        <li class="inline-block">
+          <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="/about/">
+            About
+          </a>
+        </li>
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</header>
+
+
+    <div>
+      <article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
+  <h1 class="h0 col-9 sm-width-full py-4 mt-3 inline-block" itemprop="name headline">A Few Days with Ruby</h1>
+  <div class="col-4 sm-width-full mt-1 border-top-thin ">
+    <p class="mb-3 py-2 bold h4"><time datetime="2018-06-30T00:00:00-04:00" itemprop="datePublished">Jun 30, 2018</time></p>
+  </div>
+
+  <div class="prose" itemprop="articleBody">
+      <p>Last month I spent eight consecutive days learning the Ruby language. I wasn’t able to continue coding daily. I may write on that later. But, I’m inspired to keep going and wanted to recap what I’ve learned.</p>
+
+<h2 id="flexible-and-expressive">Flexible and Expressive</h2>
+
+<p>Ruby is flexible. There’s a lot of ways to accomplish something. I like that because it feels very expressive. For example, all of these scripts return the same result.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">number</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="n">number</span> <span class="o">&lt;=</span> <span class="mi">10</span>
+  <span class="nb">puts</span> <span class="n">number</span>
+  <span class="n">number</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">end</span>
+
+<span class="n">number</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">until</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">10</span>
+  <span class="nb">puts</span> <span class="n">number</span>
+  <span class="n">number</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">end</span>
+
+<span class="k">for</span> <span class="n">number</span> <span class="k">in</span> <span class="mi">1</span><span class="o">..</span><span class="mi">10</span>
+  <span class="nb">puts</span> <span class="n">number</span>
+<span class="k">end</span>
+
+<span class="n">number</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="kp">loop</span> <span class="k">do</span>
+  <span class="n">number</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="nb">print</span> <span class="s2">"</span><span class="si">#{</span><span class="n">number</span><span class="si">}</span><span class="s2">"</span>
+  <span class="k">break</span> <span class="k">if</span> <span class="n">number</span> <span class="o">&gt;=</span> <span class="mi">10</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h2 id="storing-and-looping">Storing and Looping</h2>
+
+<p>Arrays are objects that store a collection of things. They can store things like numbers, strings, and boolean values. Arrays store their items in order. You can access any of the items or iterate through them with a loop.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="c1"># One way to loop</span>
+<span class="n">numbers</span><span class="p">.</span><span class="nf">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">item</span><span class="o">|</span> <span class="nb">puts</span> <span class="n">item</span> <span class="p">}</span>
+
+<span class="c1"># Another way to loop</span>
+<span class="n">numbers</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">item</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="n">item</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>Hashes are another way to store things. They’re useful when you want to store a key and value. You can loop through them just like arrays.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># One way to create a hash</span>
+<span class="n">secret_identities</span> <span class="o">=</span> <span class="no">Hash</span><span class="p">.</span><span class="nf">new</span>
+<span class="n">secret_identities</span><span class="p">[</span><span class="s2">"The Batman"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Bruce Wayne"</span>
+
+<span class="c1"># Another way to create a hash</span>
+<span class="n">secret_identities</span> <span class="p">{</span>
+  <span class="s2">"The Batman"</span> <span class="o">=&gt;</span> <span class="s2">"Bruce Wayne"</span>
+<span class="p">}</span>
+
+<span class="c1"># Looping through the hash</span>
+<span class="n">secret_identities</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">hero</span><span class="p">,</span> <span class="nb">name</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="s2">"</span><span class="si">#{</span><span class="n">hero</span><span class="si">}</span><span class="s2">: </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<h2 id="a-little-more-practical">A Little More Practical</h2>
+
+<p>Methods make code reusable. They’re essentially a way to package some code and give it a name. There’s a lot of them already defined in the language. Ruby’s built-in <code class="highlighter-rouge">.sort!</code> method can be used to sort array items in alphabetical order.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">books</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s2">"Charlie and the Chocolate Factory"</span><span class="p">,</span>
+  <span class="s2">"War and Peace"</span><span class="p">,</span>
+  <span class="s2">"Utopia"</span><span class="p">,</span>
+  <span class="s2">"A Brief History of Time"</span>
+<span class="p">]</span>
+
+<span class="c1"># Sort in descending order</span>
+<span class="n">books</span><span class="p">.</span><span class="nf">sort!</span> <span class="k">do</span> <span class="o">|</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="o">|</span>
+  <span class="n">second</span> <span class="o">&lt;=&gt;</span> <span class="n">first</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>You can also create your own. Here’s an example where I check to see if a number is divisible by three.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">by_three?</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">number</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span>
+    <span class="k">return</span> <span class="kp">true</span>
+  <span class="k">else</span>
+    <span class="k">return</span> <span class="kp">false</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>I’m having fun learning! It’s exciting to develop this foundation, so I can move into coding real-world projects soon. Writing these examples was helpful for me. And, maybe you found some of them helpful too. That’d be rad.</p>
+
+  </div>
+
+</article>
+
+<div class="container mx-auto px-2 py-2 clearfix">
+  <!-- Use if you want to show previous and next for all posts. -->
+
+
+
+  <div class="col-4 sm-width-full left mr-lg-4 mt-3">
+    <a class="no-underline border-top-thin py-1 block" href="http://localhost:4000/2018/05/23/learning-to-program.html">
+      <span class="h5 bold text-accent">Previous</span>
+      <p class="bold h3 link-primary mb-1">Learning to Program</p>
+      <p>Two days ago I saw this hashtag on Twitter titled #100DaysOfCode. With a little investigation, I became inspired to take...</p>
+    </a>
+  </div>
+  
+  
+
+</div>
+
+    </div>
+
+    <div class="border-top-thin clearfix mt-2 mt-lg-4">
+  <div class="container mx-auto px-2">
+    <p class="col-8 sm-width-full left py-2 mb-0">This project is maintained by <a class="text-accent" href="https://github.com/frekyll">frekyll</a></p>
+    <ul class="list-reset right clearfix sm-width-full py-2 mb-2 mb-lg-0">
+      <li class="inline-block mr-1">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="Frekyll">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li class="inline-block">
+        <a class="github-button" href="https://github.com/frekyll/" data-icon="octicon-star" data-count-href="frekyll//stargazers" data-count-api="/repos/frekyll/#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star frekyll/ on GitHub">Star</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+  </body>
+
+</html>
