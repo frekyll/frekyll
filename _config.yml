@@ -26,3 +26,6 @@ social_link: twitter
 markdown: kramdown
 theme_color: white
 theme: jekyll-swiss
+
+plugins:
+  - jekyll-redirect-from
