@@ -1,11 +1,3 @@
-title: Frekyll
-email: josh@frekyll.com
 description: Frekyll is a digital designer and musician
-baseurl: ""
-url: ""
-
-# Build settings
-markdown: kramdown
-
-plugins:
-  - jekyll-redirect-from
+email: josh@frekyll.com
+title: Frekyll
