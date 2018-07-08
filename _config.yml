@@ -4,3 +4,6 @@ title: Frekyll
 
 sass:
   style: compressed
+
+plugins:
+  - jekyll-autoprefixer
