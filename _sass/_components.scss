@@ -1,0 +1,31 @@
+.masthead {
+  align-items: center;
+  display: flex;
+  font-family: $font-family-lead;
+  height: 100vh;
+  justify-content: center;
+}
+
+.masthead-content {
+  text-align: center;
+}
+
+.headline {
+  font-size: $font-size-1;
+}
+
+.subheadline {
+  color: $grey;
+  font-size: $font-size-4;
+  margin-bottom: 1rem;
+}
+
+.link {
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    font-style: italic;
+    text-decoration: underline;
+  }
+}
