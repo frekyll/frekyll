@@ -2,7 +2,7 @@ title: Frekyll
 email: josh@frekyll.com
 description: Frekyll is a digital designer and musician
 baseurl: ""
-url: "http://frekyll.com"
+url: ""
 
 # Build settings
 markdown: kramdown
