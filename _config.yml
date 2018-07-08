@@ -8,4 +8,3 @@ sass:
 plugins:
   - jekyll-autoprefixer
   - jekyll-redirect-from
-  - octopress-minify-html
