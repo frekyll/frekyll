@@ -1,3 +1,6 @@
 description: Frekyll is a digital designer and musician
 email: josh@frekyll.com
 title: Frekyll
+
+sass:
+  style: compressed
