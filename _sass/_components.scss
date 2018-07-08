@@ -25,6 +25,11 @@
 
 .link {
   text-decoration: none;
+
+  &:focus,
+  &:hover {
+    font-style: italic;
+  }
 }
 
 .navigation {
@@ -38,11 +43,18 @@
   font-size: $font-size-6;
   font-weight: 600;
   letter-spacing: .075rem;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
 @media (min-width: $breakpoint-sm) {
+  .headline {
+    font-size: $font-size-2;
+  }
+
+  .subheadline {
+    font-size: $font-size-4;
+  }
+
   .navigation {
     display: flex;
     justify-content: space-between;
