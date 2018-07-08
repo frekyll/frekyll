@@ -6,6 +6,11 @@
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $color-base;
+}
+
+a {
+  color: $color-link;
 }
