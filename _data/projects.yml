@@ -1,0 +1,52 @@
+- title: Joel Janiszyn
+  description: >
+    Joel is a tatooer at Black Anvil.
+  client: Joel Janiszyn
+  role: Designer, front-end developer
+  tags:
+    - product design
+    - web
+  url: joel-janiszyn
+
+- title: Moon Split
+  description: >
+    Moon Split is an art exhibition and experience.
+  client: Hallie Nowak
+  role: Developer, designer
+  tags:
+    - personal
+    - product design
+    - web
+  url: moon-split
+
+- title: Mynett Music
+  description: >
+    Mynett Music provides a full musical service department, music lessons,
+    instrument rental programs, and a large selection of new and used
+    orchestral instruments.
+  client: Sweetwater
+  role: Designer, front-end developer
+  tags:
+    - product design
+    - web
+  url: mynett-music
+
+- title: Sweetwater Academy
+  description: >
+    The Sweetwater Academy is Fort Wayne's premier music school offering
+    beginner, intermediate, and advanced lessons in all instruments.
+  client: Sweetwater
+  role: Designer, front-end developer
+  tags:
+    - product design
+    - web
+  url: sweetwater-academy
+
+- title: Wandering Rosebuds Identity
+  description: >
+    Logo for Fort Wayne retail start-up
+  client: Wandering Rosebuds
+  role: Designer
+  tags:
+    - branding
+  url: wandering-rosebuds

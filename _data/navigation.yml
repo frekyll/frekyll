@@ -1,11 +1,11 @@
-- title: Dribbble
-  url: https://dribbble.com/frekyll
+- title: Projects
+  url: projects
 
-- title: GitHub
-  url: https://github.com/frekyll
+- title: Music
+  url: music
 
-- title: Instagram
-  url: https://www.instagram.com/frekyll/
+- title: About
+  url: about
 
-- title: SoundCloud
-  url: https://soundcloud.com/frekyll
+- title: Contact
+  url: contact
