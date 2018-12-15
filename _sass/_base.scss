@@ -6,10 +6,9 @@
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  color: $black;
   font-family: $font-family-base;
-  font-size: $font-size-base;
   line-height: $line-height-base;
-  color: $color-base;
 }
 
 h1,
@@ -19,8 +18,4 @@ h4,
 h5,
 h6 {
   line-height: $line-height-heading;
-}
-
-a {
-  color: $color-link;
 }
