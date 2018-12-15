@@ -7,11 +7,14 @@
 .navigation {
   border-bottom: 1px solid $grey-light;
   padding: 0.5rem 1rem;
+  text-align: center;
 }
 
 .navigation-link {
   color: $grey;
   text-decoration: none;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .navigation-link.is-active {
@@ -30,6 +33,7 @@
 
   .navigation-link {
     margin-left: 1.5rem;
+    margin-right: 0;
   }
 
   .navigation-link:first-of-type {
