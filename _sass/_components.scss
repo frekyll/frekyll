@@ -1,13 +1,50 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: $container-width;
+  max-width: 768px;
 }
 
 .navigation {
-  display: flex;
+  border-bottom: 1px solid $grey-light;
+  padding: 0.5rem 1rem;
 }
 
 .navigation-link {
-  color: $blue;
+  color: $grey;
+  text-decoration: none;
+}
+
+.navigation-link.is-active {
+  color: $black;
+}
+
+.navigation-link:hover {
+  color: $grey-light;
+}
+
+@media (min-width: $breakpoint-sm) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation-link {
+    margin-left: 1.5rem;
+  }
+
+  .navigation-link:first-of-type {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .navigation {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

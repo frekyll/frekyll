@@ -1,7 +1,15 @@
 <nav class="navigation">
-  {% for link in site.data.navigation %}
-  <a class="navigation-link" href="{{ link.url }}">
-    {{ link.title }}
-  </a>
-  {% endfor %}
+  <div>
+    <a class="navigation-link"
+       href="{{ site.data.navigation.first.url }}">
+      {{ site.data.navigation.first.title }}
+    </a>
+  </div>
+  <div>
+    {% for link in site.data.navigation offset:1 %}
+    <a class="navigation-link" href="{{ link.url }}">
+      {{ link.title }}
+    </a>
+    {% endfor %}
+  </div>
 </nav>
