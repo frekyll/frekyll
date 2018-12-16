@@ -1,14 +1,14 @@
 <nav class="navigation">
   <div>
-    <a class="navigation-link"
+    <a class="navigation-link is-active"
        href="{{ site.data.navigation.first.url }}">
-      {{ site.data.navigation.first.title }}
+      {{- site.data.navigation.first.title -}}
     </a>
   </div>
   <div>
     {% for link in site.data.navigation offset:1 %}
     <a class="navigation-link" href="{{ link.url }}">
-      {{ link.title }}
+      {{- link.title -}}
     </a>
     {% endfor %}
   </div>

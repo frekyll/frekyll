@@ -4,19 +4,19 @@
   client: Joel Janiszyn
   role: Designer, front-end developer
   tags:
-    - product design
-    - web
+    - Product design
+    - Web
   url: joel-janiszyn
 
-- title: Moon Split
+- title: Moon-Split
   description: >
-    Moon Split is an art exhibition and experience.
+    Moon-Split is an art exhibition and experience.
   client: Hallie Nowak
   role: Developer, designer
   tags:
-    - personal
-    - product design
-    - web
+    - Personal
+    - Product design
+    - Web
   url: moon-split
 
 - title: Mynett Music
@@ -27,8 +27,8 @@
   client: Sweetwater
   role: Designer, front-end developer
   tags:
-    - product design
-    - web
+    - Product design
+    - Web
   url: mynett-music
 
 - title: Sweetwater Academy
@@ -38,8 +38,8 @@
   client: Sweetwater
   role: Designer, front-end developer
   tags:
-    - product design
-    - web
+    - Product design
+    - Web
   url: sweetwater-academy
 
 - title: Wandering Rosebuds Identity
@@ -48,5 +48,5 @@
   client: Wandering Rosebuds
   role: Designer
   tags:
-    - branding
+    - Branding
   url: wandering-rosebuds
