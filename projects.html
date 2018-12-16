@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% include navigation.html %}
+
+{% for project in site.data.projects %}
+<div class="project">
+  <a class="project-image" href="{{ project.url }}">
+    <img src="https://via.placeholder.com/768x500">
+  </a>
+  <div class="project-info">
+    <h3 class="project-title">{{ project.title }}</h3>
+    {% for tag in project.tags %}
+    <a class="tag"
+       href="tags/{{ tag | split: " " | join: '-' | downcase }}">
+      {{- tag -}}
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}
