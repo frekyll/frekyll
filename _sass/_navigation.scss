@@ -14,12 +14,9 @@
   text-decoration: none;
 }
 
-.navigation-link.is-active {
-  color: $blue;
-}
-
+.navigation-link.is-active,
 .navigation-link:hover {
-  color: $grey-light;
+  color: $blue;
 }
 
 @media (min-width: $breakpoint-sm) {
