@@ -11,10 +11,10 @@
     {% for link in site.data.navigation offset:1 %}
       {% assign state == nil %}
       {% if url == link.url %}
-        {% assign state = "is-active" %}
+        {% assign state = " is-active" %}
       {% endif %}
 
-      <a class="navigation-link {{ state -}}" href="{{ link.url }}">
+      <a class="navigation-link {{- state -}}" href="{{ link.url }}">
         {{- link.title -}}
       </a>
     {% endfor %}
