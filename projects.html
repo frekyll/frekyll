@@ -5,9 +5,16 @@ title: Projects
 
 {% include navigation.html %}
 
-<div class="column">
+<div class="tag-list">
+  <h4 class="tag-list-title">{{ site.data.tags.title }}</h4>
+  {% for tag in site.data.tags.items %}
+  <a class="tag" href="{{ tag.url }}">{{ tag.title }}</a>
+  {% endfor %}
+</div>
+
+<div class="grid">
   {% for project in site.data.projects %}
-  <div class="column-half">
+  <div class="grid-column">
     <div class="project">
       <a class="project-image"
          href="projects/{{ project.title | split: " " | join: '-' | downcase }}">
@@ -24,5 +31,5 @@ title: Projects
       </div>
     </div>
   </div>
-{% endfor %}
+  {% endfor %}
 </div>
