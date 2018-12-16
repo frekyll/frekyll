@@ -4,6 +4,23 @@
   max-width: 768px;
 }
 
+.message {
+  border-top: 1px solid $grey-light;
+  margin-bottom: 2rem;
+  padding-top: 0.5rem;
+  text-align: center;
+}
+
+.message-link {
+  color: $grey;
+  font-size: $font-size-2;
+  text-decoration: none;
+}
+
+.message-link:hover {
+  color: $blue;
+}
+
 .column {
   display: flex;
   flex-wrap: wrap;
