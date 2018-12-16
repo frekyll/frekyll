@@ -1,0 +1,19 @@
+.profile {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.profile-image {
+  border-radius: 100%;
+}
+
+.profile-title {
+  color: $black;
+  font-size: $font-size-4;
+}
+
+.profile-text {
+  color: $grey;
+  font-size: $font-size-5;
+  font-weight: normal;
+}

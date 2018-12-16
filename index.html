@@ -4,11 +4,7 @@ layout: default
 
 {% include navigation.html %}
 
-<div class="profile">
-  <img class="profile-image" src="https://www.gravatar.com/avatar/fa87f62f924d7b16b9ca4ba96c6ba83c?s=128">
-  <h1 class="profile-title">{{ site.title }}</h1>
-  <h2 class="profile-text">{{ site.description }}</h2>
-</div>
+{% include profile.html %}
 
 {% for project in site.data.projects limit: 3 %}
 <div class="project">
