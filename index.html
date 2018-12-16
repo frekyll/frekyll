@@ -8,7 +8,8 @@ layout: default
 
 {% for project in site.data.projects limit: 3 %}
 <div class="project">
-  <a class="project-image" href="{{ project.url }}">
+  <a class="project-image"
+     href="projects/{{ project.title | split: " " | join: '-' | downcase }}">
     <img src="https://via.placeholder.com/768x500">
   </a>
   <div class="project-info">
