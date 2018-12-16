@@ -1,8 +1,19 @@
+// Container
+
 .container {
   margin-left: auto;
   margin-right: auto;
   max-width: 768px;
 }
+
+@mixin container-lg {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+// Message
 
 .message {
   border-top: 1px solid $grey-light;
@@ -21,10 +32,28 @@
   color: $blue;
 }
 
+// Grid
+
 .grid {
   display: flex;
   flex-wrap: wrap;
 }
+
+@mixin grid-lg {
+  .grid-column {
+    width: 50%;
+  }
+
+  .grid-column:nth-of-type(odd) {
+    padding-right: 0.5rem;
+  }
+
+  .grid-column:nth-of-type(even) {
+    padding-left: 0.5rem;
+  }
+}
+
+// Project
 
 .project {
   margin-bottom: 2rem;
@@ -48,6 +77,8 @@
   font-weight: bold;
 }
 
+// Tag
+
 .tag {
   color: $grey;
   font-family: $font-family-monospace;
@@ -60,6 +91,8 @@
   color: $blue;
 }
 
+// Tag list
+
 .tag-list {
   margin-bottom: 2rem;
   padding-right: 1rem;
@@ -71,24 +104,7 @@
   margin-bottom: 0.5rem;
 }
 
-@media (min-width: $breakpoint-lg) {
-  .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .grid-column {
-    width: 50%;
-  }
-
-  .grid-column:nth-of-type(odd) {
-    padding-right: 0.5rem;
-  }
-
-  .grid-column:nth-of-type(even) {
-    padding-left: 0.5rem;
-  }
-
+@mixin tag-list-lg {
   .tag-list {
     float: left;
     margin-bottom: 0;
