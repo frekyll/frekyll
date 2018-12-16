@@ -9,10 +9,10 @@ layout: compress
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="{{ '/assets/style.css' }}" rel="stylesheet">
     <title>
-      {{ site.title }}
+      {{- site.title -}}
       {% if page.title != nill %}
-        &middot; {{ page.title }}
-      {% endif %}
+        &middot; {{ page.title -}}
+      {%- endif -%}
     </title>
   </head>
   <body class="container">
