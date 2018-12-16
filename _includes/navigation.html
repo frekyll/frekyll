@@ -1,15 +1,22 @@
 <nav class="navigation">
   <div>
-    <a class="navigation-link is-active"
+    <a class="navigation-link"
        href="{{ site.data.navigation.first.url }}">
       {{- site.data.navigation.first.title -}}
     </a>
   </div>
   <div>
+    {% assign url = page.url | remove: ".html" %}
+
     {% for link in site.data.navigation offset:1 %}
-    <a class="navigation-link" href="{{ link.url }}">
-      {{- link.title -}}
-    </a>
+      {% assign state == nil %}
+      {% if url == link.url %}
+        {% assign state = "is-active" %}
+      {% endif %}
+
+      <a class="navigation-link {{ state -}}" href="{{ link.url }}">
+        {{- link.title -}}
+      </a>
     {% endfor %}
   </div>
 </nav>

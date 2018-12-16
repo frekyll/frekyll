@@ -4,6 +4,11 @@
   max-width: 768px;
 }
 
+.column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .project {
   margin-bottom: 2rem;
 }
@@ -21,6 +26,10 @@
   font-weight: normal;
 }
 
+.project-title-small {
+  font-size: $font-size-4;
+}
+
 .tag {
   color: $grey;
   font-family: $font-family-monospace;
@@ -36,5 +45,17 @@
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .column-half {
+    width: 50%;
+  }
+
+  .column-half:nth-of-type(odd) {
+    padding-right: 0.5rem;
+  }
+
+  .column-half:nth-of-type(even) {
+    padding-left: 0.5rem;
   }
 }
