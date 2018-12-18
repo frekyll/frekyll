@@ -5,12 +5,12 @@ title: Projects
 
 {% include navigation.html %}
 
-<div class="tag-list">
+<aside class="tag-list">
   <h4 class="tag-list-title">{{ site.data.tags.title }}</h4>
   {% for tag in site.data.tags.items %}
   <a class="tag" href="{{ tag.url }}">{{ tag.title }}</a>
   {% endfor %}
-</div>
+</aside>
 
 <div class="grid">
   {% for project in site.data.projects %}
