@@ -6,9 +6,14 @@
 @import "base";
 
 // Components
-@import "components";
+@import "container";
+@import "grid";
+@import "message";
 @import "navigation";
 @import "profile";
+@import "project";
+@import "tag";
+@import "tag-list";
 
 // Component breakpoint includes
 @import "breakpoints";

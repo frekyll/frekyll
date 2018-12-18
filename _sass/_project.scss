@@ -1,0 +1,23 @@
+// Project
+
+.project {
+  margin-bottom: 2rem;
+}
+
+.project-info {
+  margin-left: 1rem;
+}
+
+.project-image:hover {
+  opacity: 0.5;
+}
+
+.project-title {
+  font-size: $font-size-2;
+  font-weight: normal;
+}
+
+.project-title-small {
+  font-size: $font-size-5;
+  font-weight: bold;
+}

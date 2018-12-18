@@ -1,0 +1,20 @@
+// Grid
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin grid-lg {
+  .grid-column {
+    width: 50%;
+  }
+
+  .grid-column:nth-of-type(odd) {
+    padding-right: 0.5rem;
+  }
+
+  .grid-column:nth-of-type(even) {
+    padding-left: 0.5rem;
+  }
+}
