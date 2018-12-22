@@ -5,10 +5,15 @@ title: Projects
 
 {% include navigation.html %}
 
+{% assign tag_list = site.data.projects | map: 'tags' | uniq | sort %}
+
 <aside class="tag-list">
-  <h4 class="tag-list-title">{{ site.data.tags.title }}</h4>
-  {% for tag in site.data.tags.items %}
-  <a class="tag" href="{{ tag.url }}">{{ tag.title }}</a>
+  <h4 class="tag-list-title">Tags</h4>
+  {% for tag in tag_list %}
+  {% assign tag_url = tag | split: " " | join: '-' | downcase %}
+  <a class="tag" href="tags/{{ tag_url }}">
+    {{- tag -}}
+  </a>
   {% endfor %}
 </aside>
 
@@ -23,8 +28,8 @@ title: Projects
       <div class="project-info">
         <h3 class="project-title project-title-small">{{ project.title }}</h3>
         {% for tag in project.tags %}
-        <a class="tag"
-           href="tags/{{ tag | split: " " | join: '-' | downcase }}">
+        {% assign tag_url = tag | split: " " | join: '-' | downcase
+        <a class="tag" href="tags/{{ tag_url }}">
           {{- tag -}}
         </a>
         {% endfor %}
