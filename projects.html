@@ -28,7 +28,7 @@ title: Projects
       <div class="project-info">
         <h3 class="project-title project-title-small">{{ project.title }}</h3>
         {% for tag in project.tags %}
-        {% assign tag_url = tag | split: " " | join: '-' | downcase
+        {% assign tag_url = tag | split: " " | join: '-' | downcase %}
         <a class="tag" href="tags/{{ tag_url }}">
           {{- tag -}}
         </a>
