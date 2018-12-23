@@ -16,7 +16,7 @@ layout: default
     <h3 class="project-title">{{ project.title }}</h3>
     {% for tag in project.tags %}
     <a class="tag"
-       href="tags/{{ tag | split: " " | join: '-' | downcase }}">
+       href="projects?{{ tag | split: " " | join: '-' | downcase }}">
       {{- tag -}}
     </a>
     {% endfor %}

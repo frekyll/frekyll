@@ -11,7 +11,7 @@ title: Projects
   <h4 class="tag-list-title">Tags</h4>
   {% for tag in tag_list %}
   {% assign tag_url = tag | split: " " | join: '-' | downcase %}
-  <a class="tag" href="tags/{{ tag_url }}">
+  <a class="tag" href="?{{ tag_url }}">
     {{- tag -}}
   </a>
   {% endfor %}
@@ -19,17 +19,18 @@ title: Projects
 
 <div class="grid">
   {% for project in site.data.projects %}
+  {% assign project_url = project.title | split: " " | join: '-' | downcase %}
   <div class="grid-column">
-    <div class="project">
+    <div class="project" data-tags="">
       <a class="project-image"
-         href="projects/{{ project.title | split: " " | join: '-' | downcase }}">
+         href="projects/{{ project_url }}">
         <img src="https://via.placeholder.com/768x500">
       </a>
       <div class="project-info">
         <h3 class="project-title project-title-small">{{ project.title }}</h3>
         {% for tag in project.tags %}
         {% assign tag_url = tag | split: " " | join: '-' | downcase %}
-        <a class="tag" href="tags/{{ tag_url }}">
+        <a class="tag" href="?{{ tag_url }}">
           {{- tag -}}
         </a>
         {% endfor %}
