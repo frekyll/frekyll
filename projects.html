@@ -20,8 +20,8 @@ title: Projects
 <div class="grid">
   {% for project in site.data.projects %}
   {% assign project_url = project.title | split: " " | join: '-' | downcase %}
-  <div class="grid-column">
-    <div class="project" data-tags="">
+  <div class="js-project grid-column">
+    <div class="project">
       <a class="project-image"
          href="projects/{{ project_url }}">
         <img src="https://via.placeholder.com/768x500">
