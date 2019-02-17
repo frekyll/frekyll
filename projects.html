@@ -9,11 +9,14 @@ title: Projects
 
 <aside class="tag-list">
   <h4 class="tag-list-title">Tags</h4>
+  <a class="tag" href="/projects">All</a>
   {% for tag in tag_list %}
   {% assign tag_url = tag | split: " " | join: '-' | downcase %}
-  <a class="tag" href="?{{ tag_url }}">
-    {{- tag -}}
-  </a>
+  <div class="js-tag-list">
+    <a class="tag" href="?{{ tag_url }}">
+      {{- tag -}}
+    </a>
+  </div>
   {% endfor %}
 </aside>
 
@@ -23,7 +26,7 @@ title: Projects
   <div class="js-project grid-column">
     <div class="project">
       <a class="project-image"
-         href="projects/{{ project_url }}">
+         href="{{ project_url }}">
         <img src="https://via.placeholder.com/768x500">
       </a>
       <div class="project-info">
