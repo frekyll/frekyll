@@ -2,7 +2,6 @@
 
 .navigation {
   border-bottom: 1px solid $grey-light;
-  font-family: $font-family-monospace;
   margin-bottom: 2rem;
   padding: 0.5rem 1rem;
   text-align: center;
@@ -10,7 +9,7 @@
 
 .navigation-link {
   color: $grey;
-  font-size: $font-size-6;
+  font-size: $font-size-5;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   text-decoration: none;
