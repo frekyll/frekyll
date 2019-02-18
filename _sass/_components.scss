@@ -27,7 +27,13 @@
 }
 
 .navigation-link {
-  margin-right: 0.75rem;
   font-size: $font-size-5;
   font-weight: 600;
+  margin-right: 0.75rem;
+}
+
+@media (min-width: $breakpoint-md) {
+  .site-body {
+    padding: 2rem;
+  }
 }
