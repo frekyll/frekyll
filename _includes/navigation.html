@@ -1,7 +1,7 @@
 <nav class="navigation">
   {% for link in site.data.navigation %}
   <a class="link navigation-link" href="{{ link.url }}">
-    {{ link.title }}
+    {{- link.title -}}
   </a>
   {% endfor %}
 </nav>
