@@ -10,7 +10,7 @@
 
 .subheadline {
   color: $grey;
-  font-size: $font-size-5;
+  font-size: $font-size-4;
   margin-bottom: 0.5rem;
 }
 
@@ -35,5 +35,9 @@
 @media (min-width: $breakpoint-md) {
   .site-body {
     padding: 2rem;
+  }
+
+  .subheadline {
+    font-size: $font-size-3;
   }
 }
