@@ -1,4 +1,4 @@
-var container = document.querySelector('.js-repo')
+var container = document.querySelector('#projects')
 var request = new XMLHttpRequest()
 
 request.open('GET', 'https://api.github.com/users/frekyll/repos', true)
