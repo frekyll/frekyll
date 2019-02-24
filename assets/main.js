@@ -16,7 +16,7 @@ request.onload = function () {
       project.setAttribute('class', 'mb3')
 
       var name = document.createElement('a')
-      name.setAttribute('class', 'black db f3-m f4 fw6 mb2')
+      name.setAttribute('class', 'black db f3-l f4 fw6 mb2')
       name.textContent = repo.name
       name.href = repo.html_url
 
