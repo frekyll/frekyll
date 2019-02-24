@@ -1,5 +1,5 @@
 var request = new XMLHttpRequest()
-var url = 'https://api.github.com/users/frekyll/repos?sort=updated&access_token=950c7ea85913c0ebb2ae90ec64c2e797a512420d'
+var url = 'https://api.github.com/users/frekyll/repos?sort=updated'
 var projects = document.getElementById('projects')
 
 request.open('GET', url, true)
