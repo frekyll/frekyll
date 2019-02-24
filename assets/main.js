@@ -13,7 +13,7 @@ request.onload = function () {
       var repo = repos[i]
 
       var project = document.createElement('div')
-      project.setAttribute('class', 'mb3')
+      project.setAttribute('class', 'mt3')
 
       var name = document.createElement('a')
       name.setAttribute('class', 'black db f3-l f4 fw6 mb2')
