@@ -1,30 +1,33 @@
-var container = document.querySelector('#projects')
 var request = new XMLHttpRequest()
+var url = 'https://api.github.com/users/frekyll/repos?sort=updated&access_token=950c7ea85913c0ebb2ae90ec64c2e797a512420d'
+var projects = document.getElementById('projects')
 
-request.open('GET', 'https://api.github.com/users/frekyll/repos', true)
+request.open('GET', url, true)
 
 request.onload = function () {
-  var data = JSON.parse(this.response)
+  var repos = JSON.parse(this.response)
 
   if (request.status >= 200 && request.status < 400) {
-    data.forEach(function (repo) {
-      var card = document.createElement('div')
-      card.setAttribute('class', 'card')
+    for (var i = 0; i < repos.length; i++) {
+      if (i === 4) break
+      var repo = repos[i]
 
-      var name = document.createElement('h3')
+      var project = document.createElement('div')
+      project.setAttribute('class', 'mb3')
+
+      var name = document.createElement('a')
+      name.setAttribute('class', 'black db f3-m f4 fw6 mb2')
       name.textContent = repo.name
-
-      var language = document.createElement('span')
-      language.textContent = repo.language
+      name.href = repo.html_url
 
       var description = document.createElement('p')
       description.textContent = repo.description
+      description.setAttribute('class', 'f5 ma0')
 
-      container.appendChild(card)
-      card.appendChild(name)
-      card.appendChild(language)
-      card.appendChild(description)
-    })
+      projects.appendChild(project)
+      project.appendChild(name)
+      project.appendChild(description)
+    }
   } else {
     console.log('Error')
   }
