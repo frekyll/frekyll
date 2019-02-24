@@ -1,9 +1,3 @@
 description: Digital designer and musician
-email: josh@frekyll.com
+email: joshuawenning@gmail.com
 title: Frekyll
-
-sass:
-  style: compressed
-
-plugins:
-  - jekyll-autoprefixer
