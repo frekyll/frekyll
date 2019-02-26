@@ -16,7 +16,7 @@ request.onload = function () {
       project.setAttribute('class', 'mt3')
 
       var name = document.createElement('a')
-      name.setAttribute('class', 'black code dim db f3-l f4 mb2')
+      name.setAttribute('class', 'black db dim f3-l f4 mb2')
       name.textContent = repo.name
       name.href = repo.html_url
 
