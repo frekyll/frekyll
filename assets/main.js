@@ -9,14 +9,14 @@ request.onload = function () {
 
   if (request.status >= 200 && request.status < 400) {
     for (var i = 0; i < repos.length; i++) {
-      if (i === 6) break
+      if (i === 4) break
       var repo = repos[i]
 
       var project = document.createElement('div')
       project.setAttribute('class', 'mt3')
 
       var name = document.createElement('a')
-      name.setAttribute('class', 'black db dim f3-l f4 mb2')
+      name.setAttribute('class', 'blue db f3-l f4 mb2 no-underline underline-hover')
       name.textContent = repo.name
       name.href = repo.html_url
 
