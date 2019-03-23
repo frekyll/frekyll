@@ -1,3 +1,6 @@
 description: Digital designer and musician
 email: joshuawenning@gmail.com
 title: Frekyll
+
+sass:
+  style: compressed
