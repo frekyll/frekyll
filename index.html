@@ -2,26 +2,28 @@
 layout: default
 ---
 
-<div class="pa3 pa4-l">
-  <section>
-    <h1 class="f5 fw6 lh-solid mb3 mt0 tracked ttu">{{ site.title }}</h1>
-    <h2 class="f3 f2-l fw8 lh-solid mb3 mt0">{{ site.description }}</h2>
+<div class="container">
+  <header class="masthead">
+    <img class="avatar" src="https://www.gravatar.com/avatar/fa87f62f924d7b16b9ca4ba96c6ba83c?s=128">
+
+    <h1 class="masthead-title">{{ site.title }}</h1>
+    <h2 class="masthead-description">{{ site.description }}</h2>
+
+    <nav class="menu">
+      {% for link in site.data.navigation %}
+      <a class="link" href="{{ link.url }}">
+        {{- link.title -}}
+      </a>
+      {% endfor %}
+    </nav>
+  </header>
+
+  <section class="repo-list" id="projects">
+    <h1 class="repo-list-title">Latest repos</h1>
   </section>
 
-  <nav class="mb6">
-    {% for link in site.data.navigation %}
-    <a class="blue f6 mr3 no-underline underline-hover" href="{{ link.url }}">
-      {{- link.title -}}
-    </a>
-    {% endfor %}
-  </nav>
-
-  <section class="mb5" id="projects">
-    <h1 class="f2 fw8 lh-solid mb4 mt0">Latest repos</h1>
-  </section>
-
-  <footer>
-    <h3 class="f2 fw8 lh-solid mb3 mt0">Contact</h3>
-    <p class="f4 lh-copy mb2 measure mt0">For comments or questions, feel free to shoot me an email at <a class="gray hover-black link" href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+  <footer class="contact">
+    <h3 class="contact-title">Contact</h3>
+    <p class="contact-description">For comments or questions, feel free to shoot me an email at <a class="link link-muted" href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
   </footer>
 </div>
