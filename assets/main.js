@@ -9,7 +9,7 @@ request.onload = function () {
 
   if (request.status >= 200 && request.status < 400) {
     for (var i = 0; i < repos.length; i++) {
-      if (i === 4) break
+      if (i === 6) break
       var repo = repos[i]
 
       var project = document.createElement('div')
