@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="container">
+  <header class="masthead masthead-condensed">
+    <h1 class="masthead-title">
+      <a class="link link-muted" href="{{ site.url }}">{{ site.title }}</a>
+    </h1>
+
+    <nav class="menu">
+      {% assign url = page.url | remove: ".html" %}
+
+      {% for link in site.data.navigation %}
+      {% assign state = nil %}
+      {% if url == link.url %}
+      {% assign state = " is-active" %}
+      {% endif %}
+      <a class="link {{- state -}}" href="{{ link.url }}">
+        {{- link.title -}}
+      </a>
+      {% endfor %}
+    </nav>
+  </header>
+
+  {% for project in site.data.projects %}
+  <article class="project">
+    <div class="project-image">
+      <img alt="{{ project.title }}" src="{{ project.image }}">
+    </div>
+
+    <div class="project-content">
+      <ul class="project-content-description">
+        <li>{{ project.type }}</li>
+        <li>{{ project.role }}</li>
+      </ul>
+      <h2 class="project-content-title">{{ project.title }}</h2>
+
+      {% if project.link %}
+      <a class="link link-muted" href="{{ project.link }}">Visit site &rarr;</a>
+      {% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>
