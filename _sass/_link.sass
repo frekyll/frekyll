@@ -1,12 +1,14 @@
 .link
   border-bottom: 2px solid transparent
   color: $ruby
-  transition: border .125s
+  transition: border .125s, color .125s
 
+  &.is-active,
   &:hover,
   &:focus
     border-bottom-color: $ruby
+    color: $black
 
 .link-muted
   border-bottom: 0
-  color: $grey
+  color: $black
