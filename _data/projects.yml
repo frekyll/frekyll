@@ -1,33 +1,33 @@
 - title: Joel Janiszyn
   client: Joel Janiszyn
-  image: https://via.placeholder.com/768x500
+  image: https://drive.google.com/uc?export=view&id=1QEfXceq-xYh0oF4tCjSeX9EHl3z_XNo1
   link: http://joeljaniszyn.com/
   role: Designer, developer
   type: Website
 
 - title: Moon-Split
   client: Hallie Nowak
-  image: https://via.placeholder.com/768x500
+  image: https://drive.google.com/uc?export=view&id=1grRvc69orc0YBkVoVJaKAGZvx5sKzprG
   link: https://www.moon-split.com/
   role: Designer, developer
   type: Website
 
 - title: Mynett Music
   client: Sweetwater
-  image: https://via.placeholder.com/768x500
+  image: https://drive.google.com/uc?export=view&id=1rqKBYnljwz0NAjyMCp08eHkR6X7NrkY4
   link: https://www.mynettmusic.com/
-  role: Designer, front-end developer
-  type: Website
-
-- title: Sweetwater Academy
-  client: Sweetwater
-  image: https://via.placeholder.com/768x500
-  link: https://academy.sweetwater.com/
   role: Designer, front-end developer
   type: Website
 
 - title: Wandering Rosebuds
   client: Wandering Rosebuds
-  image: https://via.placeholder.com/768x500
+  image: https://drive.google.com/uc?export=view&id=1dK2xy1GQN2_fILHFJHNJSzs_TRbnXtB4
   role: Designer
   type: Identity Design
+
+# - title: Sweetwater Academy
+#   client: Sweetwater
+#   image: https://via.placeholder.com/768x500
+#   link: https://academy.sweetwater.com/
+#   role: Designer, front-end developer
+#   type: Website
