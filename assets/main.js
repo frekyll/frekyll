@@ -15,7 +15,7 @@ request.onload = function () {
 
       const repo = repos[i]
 
-      if (repo.fork !== true) {
+      if (!repo.fork) {
         const project = document.createElement('div')
         project.setAttribute('class', 'repo-list-project')
 
@@ -24,12 +24,17 @@ request.onload = function () {
         name.textContent = repo.name
         name.href = repo.html_url
 
+        const language = document.createElement('span')
+        language.textContent = repo.language
+        language.setAttribute('class', 'repo-list-language')
+
         const description = document.createElement('p')
         description.textContent = repo.description
         description.setAttribute('class', 'repo-list-description')
 
         projects.appendChild(project)
         project.appendChild(name)
+        project.appendChild(language)
         project.appendChild(description)
       }
     }
